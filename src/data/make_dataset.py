@@ -4,7 +4,9 @@ import logging
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
 
-
+### WARNING
+# This is not in use yet!
+# It is just the pre-generated dataset file
 @click.command()
 @click.argument('input_filepath', type=click.Path(exists=True))
 @click.argument('output_filepath', type=click.Path())

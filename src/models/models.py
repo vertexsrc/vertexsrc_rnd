@@ -10,5 +10,7 @@ def YOLOS():
     YOLOS model fine-tuned on COCO 2017 object detection (118k annotated images).
     Vision transformer trained using the DETR loss
     '''
+    model = YolosForObjectDetection.from_pretrained('hustvl/yolos-tiny')
+    image_processor = YolosImageProcessor.from_pretrained("hustvl/yolos-tiny")
 
-    return YolosForObjectDetection.from_pretrained('hustvl/yolos-tiny')
+    return model, image_processor
